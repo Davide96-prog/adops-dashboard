@@ -2,64 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AdOps Campaign Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f6fa;
+      margin: 0;
+      padding: 20px;
+      color: #2c3e50;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    h1 {
+      text-align: center;
+      color: #34495e;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .cta {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .btn {
+      padding: 15px 25px;
+      background-color: #2d98da;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #2276b8;
+    }
+    .preview {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .preview img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>AdOps Campaign Dashboard</h1>
-    <p>Performance Insights – Case Study</p>
-  </header>
-
   <div class="container">
-    <section class="kpi-box">
-      <div class="kpi">
-        <h2>CTR</h2>
-        <p>0.14%</p>
-      </div>
-      <div class="kpi">
-        <h2>Total Clicks</h2>
-        <p>363</p>
-      </div>
-      <div class="kpi">
-        <h2>eCPC</h2>
-        <p>$1.85</p>
-      </div>
-      <div class="kpi">
-        <h2>Impressions</h2>
-        <p>257,762</p>
-      </div>
-    </section>
+    <h1>📊 AdOps Campaign Dashboard</h1>
+    <p>
+      Questo progetto rappresenta un esercizio di performance analysis in ambito AdOps.
+      I dati raccolti sono stati analizzati per ottimizzare l'efficacia delle campagne pubblicitarie in base a:
+      <strong>tempo, località, genere, età e formato dei banner.</strong>
+    </p>
 
-    <h2 class="section-title">Key Visuals</h2>
+    <p>
+      La dashboard mostra le metriche chiave: CTR, impressions, click, eCPC e consente una valutazione interattiva
+      delle variabili che influenzano i risultati. Lo scopo è offrire una visione data-driven utile per prendere
+      decisioni di ottimizzazione mirata.
+    </p>
 
-    <img src="1.png" alt="Daily Performance" class="graphic" />
-    <img src="2.png" alt="Time of Day" class="graphic" />
-    <img src="3.png" alt="Day of Week" class="graphic" />
-    <img src="4.png" alt="Gender" class="graphic" />
-    <img src="5.png" alt="Age" class="graphic" />
-    <img src="6.png" alt="City" class="graphic" />
-    <img src="7.png" alt="Creative Size" class="graphic" />
-    <img src="8.png" alt="Extra Tableau Preview" class="graphic" />
+    <div class="cta">
+      <a class="btn" href="https://public.tableau.com/app/profile/davide.de.luca/viz/AdOpsCampaignDashboardPerformanceOverview/Dashboard1?publish=yes" target="_blank">
+        🔗 Guarda la Dashboard Interattiva su Tableau
+      </a>
+    </div>
 
-    <h2 class="section-title">Strategic Insights</h2>
-    <ul>
-      <li>Friday delivered the best CTR (0.19%) and strong overall engagement</li>
-      <li>CTR peaks between 7–10 AM; early-day delivery is recommended</li>
-      <li>Female and 35–49 audiences showed the best cost-performance balance</li>
-      <li>The 320x50 banner format outperformed all others in CTR and clicks</li>
-      <li>High-CTR cities like Buena Vista offer strong results in niche geos</li>
-      <li>Campaign strategy must adapt based on platforms, bidding models, and optimization cycles</li>
-    </ul>
-
-    <h2 class="section-title">Resources</h2>
-    <p><a href="AdOps_Presentation.pdf" target="_blank">📎 Download Full Presentation (PDF)</a></p>
-    <p><a href="https://public.tableau.com/app/profile/..." target="_blank">📊 View Tableau Dashboard</a></p>
+    <div class="preview">
+      <p><em>Anteprima della dashboard:</em></p>
+      <img src="dashboard-preview.gif" alt="Dashboard preview (GIF)">
+    </div>
   </div>
-
-  <footer>
-    <p>Created by Davide De Luca – GitHub & Tableau Portfolio</p>
-  </footer>
 </body>
 </html>
+
